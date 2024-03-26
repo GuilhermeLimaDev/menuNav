@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    height: 40px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+     
+}
+header img{
+    width: 20%;
+}
+header p{
+    font-size: 20px;
+}
+#botaoabrir{
+    font-size: 20px;
+    width:  30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: rgb(74, 41, 105);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(92, 32, 149);
+    width: 20%;
+    height: 40%;
+    border-radius: 0px 0px 20px;
+}
+
+#botaofechar{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(49, 15, 82);
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+nav p{
+    margin: 10px 0px;
+    background-color: rgb(52, 15, 86);
+    padding: 5px 15px;
+    border-radius: 0px 10px 0px 0px;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+article{
+    background-color: #ffffff;
+    color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+article h1{
+    font-size: 2em;
+}
+
+article p{
+    margin: 10px 0px;
+    letter-spacing: 3px;
+}
+
+
+div input{
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    background:none;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s color 0.5s;
+}
+div input:hover{
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+
+@media(max-width: 720px){
+    #botaoabrir{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header p{
+        display: none;
+    }
+    header img{
+        width: 40%;
+    }
+}
